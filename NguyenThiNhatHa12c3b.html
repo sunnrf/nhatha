@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Nhật Hà</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #1c3a2b;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #25434f;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #ff8c00;
+        }
+
+        .navbar a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1em;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #ffb6c1;
+        }
+
+        .header {
+            text-align: center;
+            position: relative;
+            padding: 100px 20px;
+        }
+
+        .header::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(28, 58, 43, 0.7);
+            z-index: 1;
+        }
+
+        .header h1 {
+            font-size: 3em;
+            color: #ffffff;
+            position: relative;
+            z-index: 2;
+        }
+
+        .info-section, .info-section-duplicate {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 20px;
+            background-color: #3a5a47;
+            position: relative;
+        }
+
+        .info-section-duplicate {
+            margin-top: 20px;
+        }
+
+        .info-section .info, .info-section-duplicate .info {
+            flex: 1;
+            color: #ffffff;
+        }
+
+        .info h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .info p {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+
+        .info .contact-info p {
+            margin: 5px 0;
+        }
+
+        .info-section .avatar, .info-section-duplicate .avatar {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            position: left;
+        }
+
+        .info-section .avatar img, .info-section-duplicate .avatar img {
+            max-width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            position: right;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">Nhật Hà</div>
+        <div>
+            <a href="#">Sở thích của em</a>
+            <a href="#">Ngôi trường mơ ước</a>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <header class="header" style="background-image: url('https://i.imgur.com/EbGoxCi.jpeg'); background-size: cover; background-position: center; padding: 100px 10px;">
+        <h1>Em là Nhật Hà!</h1>
+    </header>
+
+    <!-- Info Section -->
+    <section class="info-section">
+        <div class="info">
+            <h2>Em là học sinh lớp 12c3b</h2>
+            <div class="contact-info">
+                <p><strong>Sở thích của em:</strong> Ngủ, hát karaoke, nướng bánh, nấu xói</p>
+                <p><strong>Môn học yêu thích:</strong> Âm nhạc, Mỹ thuật</p>
+            </div>
+        </div>
+        <div class="avatar">
+            <img src="https://i.imgur.com/LHDAM7y.jpeg" alt="Nhật Hà">
+        </div>
+    </section>
+
+    <!-- Dark Divider Section -->
+    <div class="info-section-duplicate">
+        <!-- Duplicate Info Section -->
+        <section class="info-section">
+            <div class="info">
+                <h2>Em là học sinh lớp 12c3b</h2>
+                <div class="contact-info">
+                    <p><strong>Address:</strong> Ngủ, hát karaoke, nướng bánh, nấu xói</p>
+                    <p><strong>D.O.B:</strong> 16.01.2007</p>
+                </div>
+            </div>
+            <div class="avatar">
+                <img src="https://i.imgur.com/LHDAM7y.jpeg" alt="Nhật Hà">
+            </div>
+        </section>
+    </div>
+</body>
+</html>
